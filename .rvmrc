@@ -1,0 +1,5 @@
+if [[ -n "$rvm_environments_path" && -s "$rvm_environments_path/ruby-1.9.3-p0@admin" ]] ; then
+  . "$rvm_environments_path/ruby-1.9.3-p0@admin"
+else
+  rvm --create use  "ruby-1.9.3-p0@admin"
+fi
